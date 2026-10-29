@@ -83,7 +83,7 @@ session_start();
         <div class="card form-card shadow-sm mx-auto">
             <div class="card-body p-4 p-md-5">
 
-                <form method="POST" action="form.php">
+                <form method="POST" action="form.php" onsubmit="return validateForm()">
                     <?php
                     if (isset($_SESSION['msg'])) {
                       $msg = $_SESSION['msg'];
